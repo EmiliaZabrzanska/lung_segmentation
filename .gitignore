@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset contents (not ours to redistribute), keep the README
+data/*
+!data/README.md
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
