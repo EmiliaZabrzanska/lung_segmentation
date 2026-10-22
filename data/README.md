@@ -1,22 +1,15 @@
-# Data folder
+# Data
 
-The X-ray images are **not** stored on GitHub (`.gitignore` ignores everything in this
-folder except this file). Put your copy of the Montgomery County X-ray set here so it looks like:
+The X-ray images are not version-controlled (`.gitignore` ignores everything in this folder except
+this file). Download `MontgomerySet.zip` from Canvas and unzip it here, so that the folder looks like:
 
 ```
 data/
 └── MontgomerySet/
-    ├── CXR_png/                  MCUCXR_0001_0.png, ...   (the X-rays)
+    ├── CXR_png/             MCUCXR_0001_0.png, ...   (X-rays)
     └── ManualMask/
-        ├── leftMask/             MCUCXR_0001_0.png, ...   (left lung masks)
-        └── rightMask/            MCUCXR_0001_0.png, ...   (right lung masks)
+        ├── leftMask/        MCUCXR_0001_0.png, ...   (left lung masks)
+        └── rightMask/       MCUCXR_0001_0.png, ...   (right lung masks)
 ```
 
-Where to get it:
-
-* **CDT server copy:** `/data/cdtshared/Cohort-2024/HDS-M03/MontgomerySet`
-  (if you work on the server you don't need to copy anything – just change `DATA_DIR` in `lungseg.py`).
-* **Online:** http://openi.nlm.nih.gov/imgs/collections/NLM-MontgomeryCXRSet.zip – unzip it into this folder.
-
-If your copy uses different folder names (e.g. `left/` and `right/`), edit the three
-folder lines at the top of `lungseg.py` – nothing else needs to change.
+If the folder names differ, change the paths in the first code cell of Part 1 in `solution.ipynb`.
